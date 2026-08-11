@@ -309,8 +309,70 @@ func main() {
 	//  // code to be executed
 	// }
 
+	familyName("Liam", 3)
+	familyName("Jenny", 14)
+	familyName("Anja", 30)
+
+	// ==== Function Returns ====
+	// Syntax
+	// func FunctionName(param1 type, param2 type) type {
+	//  // code to be executed
+	//  return output
+	// }
+
+	fmt.Println(myFunction(1, 2))
+
+	tot := myFunction(3, 4)
+	fmt.Println(tot)
+
+	fmt.Println(myFunc(5, "Hello"))
+
+	va, vb := myFunc(10, "Greetings!")
+	fmt.Println(va, vb)
+
+	vc, _ := myFunc(10, "Greetings!")
+	fmt.Println(vc)
+
+	// ==== Recursion ====
+	testcount(1)
+
+	// Factorial function
+	fmt.Println("factorial: ", factorial_recursion(4))
+
 }
 
 func myMessage() {
 	fmt.Println("I just got Executed")
+}
+
+func familyName(fname string, age int) {
+	fmt.Println("Hello", age, "year old", fname, "Refsnes")
+}
+
+func myFunction(x int, y int) (result int) {
+	result = x + y
+	return result
+}
+
+func myFunc(x int, y string) (result int, txt1 string) {
+	result = x + x
+	txt1 = y + " World!"
+	return
+}
+
+func testcount(x int) int {
+	if x == 11 {
+		return 0
+	}
+	fmt.Println(x)
+	return testcount(x + 1)
+}
+
+func factorial_recursion(x float64) (y float64) {
+	if x > 0 {
+		y = x * factorial_recursion(x-1)
+	} else {
+		y = 1
+	}
+	return
 }
