@@ -22,13 +22,13 @@ Welcome to my **Go (Golang)** learning repository! This project serves as a dedi
   - Control Flow (If/Else, Switch)
   - Loops (`for`, `range`)
   - Functions & Recursion
+  - Structs
 
 ### Phase 02 - Mastering Go
 
 - [ ] **Go by Example**
   - **Data & Memory**
     - [ ] Pointers
-    - [ ] Structs
     - [ ] Struct Embedding
     - [ ] Enums
     - [ ] Map
