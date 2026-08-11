@@ -151,4 +151,166 @@ func main() {
 	fmt.Printf("length = %d\n", len(numbersCopy))
 	fmt.Printf("capacity = %d\n", cap(numbersCopy))
 
+	// === If & If Else statement ===
+	// if condition {
+	// 	code to be executed if condition is true
+	// }
+
+	// 1
+	if 20 > 18 {
+		fmt.Printf("Better")
+	}
+
+	// 2
+	if 20 > 18 {
+		// code to be executed if condition is true
+	} else {
+		// code to be executed if condition is false
+	}
+
+	time := 20
+	// 3
+	if time < 10 {
+		fmt.Println("Good morning.")
+	} else if time < 20 {
+		fmt.Println("Good day.")
+	} else {
+		fmt.Println("Good evening.")
+	}
+
+	// === NESTED IF ===
+
+	// Syntax
+	// if condition1 {
+	// 	// code to be executed if condition1 is true
+	// 	if condition2 {
+	// 		// code to be executed if both condition1 and condition2 are true
+	// 	}
+	// }
+
+	num := 20
+	if num >= 10 {
+		fmt.Println("Num is more than 10.")
+		if num > 15 {
+			fmt.Println("Num is more than 15.")
+		}
+	} else {
+		fmt.Println("Num is less than 10.")
+	}
+
+	// === switch Statement ===
+
+	// Syntax
+	// switch expression {
+	// case x:
+	//   // code block
+	// case y:
+	//   // code block
+	// case z:
+	// ...
+	// default:
+	//   // code block
+	// }
+
+	day := 2
+
+	switch day {
+	case 1:
+		fmt.Println("Monday")
+	case 2:
+		fmt.Println("Tuesday")
+	default:
+		fmt.Println("Invalid")
+	}
+
+	// === MULTI CASE
+	// Syntax
+	// switch expression {
+	// case x,y:
+	//   // code block if expression is evaluated to x or y
+	// case v,w:
+	//   // code block if expression is evaluated to v or w
+	// case z:
+	// ...
+	// default:
+	//   // code block if expression is not found in any cases
+	// }
+
+	switch day {
+	case 1, 3, 5:
+		fmt.Println("Odd weekday")
+	case 2, 4:
+		fmt.Println("Even weekday")
+	case 6, 7:
+		fmt.Println("Weekend")
+	default:
+		fmt.Println("Invalid day of day number")
+	}
+
+	// === LOOPS ===
+
+	// ==== Go for Loop ====
+	// Syntax
+	// for statement1; statement2; statement3 {
+	//   // code to be executed for each iteration
+	// }
+
+	for i := 0; i < 5; i++ {
+		if i == 3 {
+			continue
+		}
+		fmt.Println(i)
+	}
+
+	for i := 0; i <= 100; i += 10 {
+		// if i == 80 {
+		// 	break
+		// }
+		fmt.Println(i)
+	}
+
+	// ==== Nested Loops ====
+	adj := [2]string{"big", "tasty"}
+	fruits := [3]string{"apple", "orange", "banana"}
+
+	for i := 0; i < len(adj); i++ {
+		for j := 0; j < len(fruits); j++ {
+			fmt.Println(adj[i], fruits[j])
+		}
+	}
+
+	// ==== The Range Keyword ====
+
+	// Syntax
+	// for index, value := range array|slice|map {
+	//   // code to be executed for each iteration
+	// }
+
+	for idx, val := range fruits {
+		fmt.Printf("%v\t%v\n", idx, val)
+	}
+
+	for _, val := range fruits {
+		fmt.Printf("%v\n", val)
+	}
+
+	// === Go Functions ===
+	// Syntax
+	// func FunctionName() {
+	//  // code to be executed
+	// }
+
+	myMessage()
+	myMessage()
+
+	// ==== Function Parameters and Arguments ====
+	// Syntax
+	// func FunctionName(param1 type, param2 type, param3 type) {
+	//  // code to be executed
+	// }
+
+}
+
+func myMessage() {
+	fmt.Println("I just got Executed")
 }
