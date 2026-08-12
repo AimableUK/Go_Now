@@ -379,7 +379,7 @@ func main() {
 	printPerson(pers1)
 
 	// === Go Maps ===
-	
+
 	// Syntax
 	// var a = map[KeyType]ValueType{key1:value1, key2:value2,...}
 	// b := map[KeyType]ValueType{key1:value1, key2:value2,...}
@@ -391,7 +391,7 @@ func main() {
 	fmt.Printf("b\t%v\n", cityMap)
 
 	// ==== Usin Make to create a Map ====
-	
+
 	// Syntax
 	// var a = make(map[KeyType]ValueType)
 	// b := make(map[KeyType]ValueType)
@@ -400,7 +400,58 @@ func main() {
 	ma["brand"] = "Ford"
 	ma["model"] = "Mustang"
 	ma["year"] = "1964"
-	
+
+	// create an empty map
+
+	var aMap map[string]float32
+	fmt.Println(aMap == nil)
+	fmt.Println(ableMap["brand"])
+
+	ableMap["year"] = "1970" // Updating an element
+	ableMap["color"] = "red" // Adding an element
+
+	delete(ableMap, "year")
+	fmt.Print(ableMap, "\n\n")
+
+	// ====== Check For Specific Elements in a Map =======
+
+	// Syntax
+	// val, ok :=map_name[key]
+
+	val1, ok1 := ableMap["brand"] // Checking for existing key and its value
+	val2, ok2 := ableMap["color"] // Checking for non-existing key and its value
+	val3, ok3 := ableMap["day"]   // Checking for existing key and its value
+	_, ok4 := ableMap["model"]    // Only checking for existing key and not its value
+
+	fmt.Println("Maps:")
+	fmt.Println(val1, ok1)
+	fmt.Println(val2, ok2)
+	fmt.Println(val3, ok3)
+	fmt.Println(ok4)
+
+	// maps are references to hash tables.
+
+	fmt.Println(ableMap)
+	avanaMap := ableMap
+	avanaMap["color"] = "blue"
+	fmt.Println(avanaMap, ableMap)
+
+	// ===== Iterating over maps ======
+	amazi := map[string]int{"one": 1, "two": 2, "three": 3, "four": 4}
+
+	for k, v := range amazi {
+		fmt.Printf("%v : %v, ", k, v)
+	}
+
+	var babo []string
+	babo = append(babo, "one", "two", "three", "four")
+
+	for k, v := range amazi { // no order
+		fmt.Printf("%v %v", k, v)
+	}
+
+
+
 }
 
 // ===== FUNCTIONS ======
