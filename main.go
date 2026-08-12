@@ -377,6 +377,30 @@ func main() {
 	fmt.Println("Salary: ", pers2.salary)
 
 	printPerson(pers1)
+
+	// === Go Maps ===
+	
+	// Syntax
+	// var a = map[KeyType]ValueType{key1:value1, key2:value2,...}
+	// b := map[KeyType]ValueType{key1:value1, key2:value2,...}
+
+	var ableMap = map[string]string{"brand": "ford", "model": "Mustang", "year": "1964"}
+	cityMap := map[string]int{"Oslo": 1, "Bergen": 2, "Trondheim": 3, "Stavanger": 4}
+
+	fmt.Printf("a\t%v\n", ableMap)
+	fmt.Printf("b\t%v\n", cityMap)
+
+	// ==== Usin Make to create a Map ====
+	
+	// Syntax
+	// var a = make(map[KeyType]ValueType)
+	// b := make(map[KeyType]ValueType)
+
+	var ma = make(map[string]string)
+	ma["brand"] = "Ford"
+	ma["model"] = "Mustang"
+	ma["year"] = "1964"
+	
 }
 
 // ===== FUNCTIONS ======
