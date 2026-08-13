@@ -2,7 +2,8 @@ package main
 
 import "fmt"
 
-func main() {
+// I changed this to avoid the confusion in the code.
+func mainA() {
 	// === Hello World ===
 	fmt.Println("Hello, World!")
 

@@ -27,15 +27,15 @@ Welcome to my **Go (Golang)** learning repository! This project serves as a dedi
 ### Phase 02 - Mastering Go
 
 - [ ] **Go by Example**
-  - **Data & Memory**
+  - **[Data & Memory](./Learn/Go_By_Example/Data_and_Memory.go)**   __[Exercises I did](./Exercises/Go_By_Example/Data_Memory_Exercises.md)__
     - [x] Pointers
     - [x] Struct Embedding
     - [x] Enums
     - [x] Map
-    - [ ] Methods
-    - [ ] Interfaces
-    - [ ] Generics
-  - **Advanced Control Flow**
+    - [x] Methods
+    - [x] Interfaces
+    - [x] Generics
+  - **[Advanced Control Flow](./Learn/Go_By_Example/Advanced_Control_Flow.go)**
     - [ ] Closures
     - [ ] Variadic Functions
     - [ ] Multiple Return Values
