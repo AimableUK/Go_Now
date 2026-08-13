@@ -494,7 +494,6 @@ func main() {
 	fmt.Println(employee)
 	fmt.Printf("Name: %v\t Salary: %v\t Status: %v\n", employee.Name, employee.Salary, employee.marital)
 
-	
 	// === ENUMS ===
 
 	fmt.Println(Pending)  // 0
@@ -512,6 +511,29 @@ func main() {
 		fmt.Println("Denied")
 	}
 
+	// === METHODS ===
+
+	user := User{Name: "Aimable", age: 30}
+	user.Greet()
+
+	usere := User{Name: "fik", age: 23}
+	usere.Greet()
+
+	abe := Able{class: "S4c"}
+	abe.Goat()
+
+	change := User{Name: "John"}
+	change.ChangeName()
+	fmt.Println(change.Name)
+
+	dog := Dog{Name: "alain"}
+	cat := Cat{}
+
+	makeSpeak(dog)
+	makeSpeak(cat)
+
+	Max(20,30)
+	Max(30.43, 22.45)
 }
 
 // ===== FUNCTIONS ======
@@ -597,3 +619,67 @@ func (s Stat) String() string {
 	return "Unknown"
 }
 
+// ==== Methods ====
+
+type User struct {
+	Name string
+	age  int
+}
+
+// Normal Function
+func greet(user User) {
+	fmt.Println("Hello", user.Name)
+}
+
+// Method
+func (u User) Greet() {
+	fmt.Println("Hello", u.Name, " Age: ", u.age)
+}
+
+type Able struct {
+	class string
+}
+
+func (a Able) Goat() {
+	fmt.Println("wtf", a.class)
+}
+
+// ==== Pointer Receiver ====
+
+func (u *User) ChangeName() {
+	u.Name = "Abel"
+}
+
+func (u *User) SetName(name string) {
+	u.Name = name
+}
+
+// ==== INTERFACES ====
+
+type Speaker interface {
+	speak()
+}
+
+type Dog struct{ Name string }
+type Cat struct{}
+
+func (d Dog) speak() {
+	fmt.Println("Woof", d.Name)
+}
+
+func (c Cat) speak() {
+	fmt.Println("Meow")
+}
+
+func makeSpeak(s Speaker) {
+	s.speak()
+}
+
+// ==== GENERICS ====
+
+func Max[T int | float64](a T, b T) T {
+	if a > b {
+		return a
+	}
+	return b
+}
