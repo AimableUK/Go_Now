@@ -28,10 +28,10 @@ Welcome to my **Go (Golang)** learning repository! This project serves as a dedi
 
 - [ ] **Go by Example**
   - **Data & Memory**
-    - [ ] Pointers
-    - [ ] Struct Embedding
-    - [ ] Enums
-    - [ ] Map
+    - [x] Pointers
+    - [x] Struct Embedding
+    - [x] Enums
+    - [x] Map
     - [ ] Methods
     - [ ] Interfaces
     - [ ] Generics
@@ -39,7 +39,7 @@ Welcome to my **Go (Golang)** learning repository! This project serves as a dedi
     - [ ] Closures
     - [ ] Variadic Functions
     - [ ] Multiple Return Values
-    - [ ] Recursion
+    - [x] Recursion
     - [ ] Defer/Panic/Recover
     - [ ] Range over Iterators
   - **Error Handling**

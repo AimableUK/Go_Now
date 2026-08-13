@@ -450,7 +450,67 @@ func main() {
 		fmt.Printf("%v %v", k, v)
 	}
 
+	// === POINTERS ===
 
+	agee := 20
+	var point *int = &agee
+
+	fmt.Println(agee)   // 20
+	fmt.Println(point)  // something like 0xc000...
+	fmt.Println(*point) // 20
+
+	changeAgee(&agee)
+	fmt.Println(agee)
+
+	artist := "Bex"
+	changeBex(&artist)
+	fmt.Println(artist)
+
+	// === Struct Embedding ===
+
+	type Persona struct {
+		Name string
+	}
+
+	type Status struct {
+		marital string
+	}
+
+	type Employee struct {
+		Persona
+		Status
+		Salary int
+	}
+
+	employee := Employee{
+		Persona: Persona{
+			Name: "Aimable",
+		},
+		Salary: 500000,
+		Status: Status{
+			marital: "Single",
+		},
+	}
+	fmt.Println(employee)
+	fmt.Printf("Name: %v\t Salary: %v\t Status: %v\n", employee.Name, employee.Salary, employee.marital)
+
+	
+	// === ENUMS ===
+
+	fmt.Println(Pending)  // 0
+	fmt.Println(Approved) // 1
+	fmt.Println(Rejected) // 2
+
+	stat := Approved
+
+	switch stat {
+	case Pending:
+		fmt.Println("Waiting")
+	case Approved:
+		fmt.Println("Accepted")
+	case Rejected:
+		fmt.Println("Denied")
+	}
 
 }
 
@@ -505,3 +565,35 @@ func printPerson(pers Person) {
 	fmt.Println("Job: ", pers.job)
 	fmt.Println("Salary: ", pers.salary)
 }
+
+// ===== PONTER =====
+func changeAgee(agee *int) {
+	*agee = 30
+}
+
+func changeBex(artist *string) {
+	*artist = "Able"
+}
+
+// ==== ENUMS =====
+
+type Stat int
+
+const (
+	Pending Stat = iota // iota automatically increments.
+	Approved
+	Rejected
+)
+
+func (s Stat) String() string {
+	switch s {
+	case Pending:
+		return "Pending"
+	case Approved:
+		return "Approved"
+	case Rejected:
+		return "Rejected"
+	}
+	return "Unknown"
+}
+
