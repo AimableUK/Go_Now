@@ -2,6 +2,7 @@
 
 Welcome to my **Go (Golang)** learning repository! This project serves as a dedicated workspace for exploring the Go programming language, mastering its idiomatic patterns, and building robust, high-performance backend services.
 
+#### **Date I Started, 11/07/2026 11:30 AM**
 ---
 
 ## 🎯 Project Objectives
