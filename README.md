@@ -175,19 +175,10 @@ Welcome to my **Go (Golang)** learning repository! This project serves as a dedi
 
 ```text
 Go_Now/
-├── main.go      # Entry point of the application
-├── go.mod       # Dependency management
-└── README.md    # Documentation
+├── Exercises/            # Practice exercises
+├── Learn/                # Learning materials
+└── README.md             # Documentation
 ```
-
-## Getting Started
-
-1. **Prerequisites:**
-   Ensure you have [Go installed](https://go.dev/doc/install) (version 1.20+ recommended).
-2. **Run the Project:**
-   ```bash
-   go run main.go
-   ```
 
 ---
 
