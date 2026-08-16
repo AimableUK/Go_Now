@@ -4,27 +4,36 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"strings"
+	"unicode"
 )
 
 func main() {
 	input := bufio.NewReader(os.Stdin)
+	fmt.Print("Enter text: ")
 	str, err := input.ReadString('\n')
 
 	if err != nil {
-		fmt.Println(err)
+		fmt.Println("Error reading input:", err)
 	} else {
 		val := wordFreq(str)
-		fmt.Println(val)
+		fmt.Println("Word frequencies:", val)
 	}
 }
 
-func wordFreq(inputedWord string) {
+func wordFreq(inputedWord string) map[string]int {
+	dict := make(map[string]int)
 
-	x := ""
-	for char := range inputedWord {
-		if char == " " {
+	// FieldsFunc splits the string based on any character that is NOT a letter or number
+	words := strings.FieldsFunc(inputedWord, func(r rune) bool {
+		return !unicode.IsLetter(r) && !unicode.IsNumber(r)
+	})
 
-		}
-		x += char
+	for _, word := range words {
+		// Normalize to lowercase for case-insensitive counting
+		lowerWord := strings.ToLower(word)
+		dict[lowerWord]++
 	}
+
+	return dict
 }
