@@ -37,12 +37,12 @@ Welcome to my **Go (Golang)** learning repository! This project serves as a dedi
     - [x] Interfaces
     - [x] Generics
   - **[Advanced Control Flow](./Learn/Go_By_Example/Advanced_Control_Flow.go)**
-    - [ ] Closures
-    - [ ] Variadic Functions
-    - [ ] Multiple Return Values
+    - [x] Closures
+    - [x] Variadic Functions
+    - [x] Multiple Return Values
     - [x] Recursion
-    - [ ] Defer/Panic/Recover
-    - [ ] Range over Iterators
+    - [x] Defer/Panic/Recover
+    - [x] Range over Iterators
   - **Error Handling**
     - [ ] Errors
     - [ ] Custom Errors

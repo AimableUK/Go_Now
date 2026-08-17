@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	fmt.Println("Advanced Control Flow...")
@@ -20,6 +22,29 @@ func main() {
 
 	c := counter()
 	fmt.Println(c())
+
+	// === VARIADIC === It can take as many values at you want
+	sum()
+	sum(5)
+	sum(5, 10)
+	sum(5, 10, 20, 30)
+
+	// === Multiple Return Values ===
+	q, r := divide(40, 10)
+	fmt.Println(q, r)
+	fmt.Println(divide(10, 2))
+
+	// === DEFER ===
+	defer fmt.Println("First")
+	defer fmt.Println("Second")
+	defer fmt.Println("Third")
+	exaDefer()
+
+	// === Range over Iterators ===
+	for n := range count {
+		fmt.Println(n)
+	}
+
 }
 
 type Stats struct {
@@ -66,5 +91,60 @@ func itemTracker() func(string) []string {
 	return func(newItem string) []string {
 		items = append(items, newItem)
 		return items
+	}
+}
+
+// ===== VARIADIC ===== It behaves as a slice.
+
+func sum(numbers ...int) int {
+	total := 0
+
+	for _, number := range numbers {
+		total += number
+	}
+
+	fmt.Println("variadic hehehe: ", numbers, total)
+
+	return total
+}
+
+// ===== Multiple Return Values ======
+func divide(a int, b int) (int, int) {
+	quo := a / b
+	rem := a % b
+
+	return quo, rem
+}
+
+// ===== DEFER ======
+func exaDefer() {
+	defer fmt.Println("Gooddd")
+
+	fmt.Println("Hello")
+}
+
+// ===== PANIC =====
+func exaPanic() {
+	panic("Sth went Wrong!!")
+}
+
+// recover best called inside the defer function and can help us to handle the program
+// continuity if the panic happens so that it can be solved.
+func protect() {
+	defer func() {
+		if r := recover(); r != nil {
+			fmt.Println("Recovered:", r)
+		}
+	}()
+
+	panic("Sth went wrong!..")
+}
+
+// ===== Range over Iterators =====
+func count(yield func(int) bool) {
+	for i := 1; i <= 5; i++ {
+		if !yield(i) {
+			return
+		}
 	}
 }
