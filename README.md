@@ -3,6 +3,7 @@
 Welcome to my **Go (Golang)** learning repository! This project serves as a dedicated workspace for exploring the Go programming language, mastering its idiomatic patterns, and building robust, high-performance backend services.
 
 #### **Date I Started, 11/07/2026 11:30 AM**
+
 ---
 
 ## 🎯 Project Objectives
@@ -27,8 +28,8 @@ Welcome to my **Go (Golang)** learning repository! This project serves as a dedi
 
 ### Phase 02 - Mastering Go
 
-- [ ] **Go by Example**
-  - **[Data & Memory](./Learn/Go_By_Example/Data_and_Memory.go)**   __[Exercises I did](./Exercises/Go_By_Example/Data_Memory_Exercises.md)__
+- [ ] **Go Core & Language Features**
+  - **[Data & Memory](./Learn/Go_By_Example/Data_and_Memory.go)** **[Exercises I did](./Exercises/Go_By_Example/Data_Memory_Exercises.md)**
     - [x] Pointers
     - [x] Struct Embedding
     - [x] Enums
@@ -43,72 +44,49 @@ Welcome to my **Go (Golang)** learning repository! This project serves as a dedi
     - [x] Recursion
     - [x] Defer/Panic/Recover
     - [x] Range over Iterators
-  - **Error Handling**
-    - [ ] Errors
-    - [ ] Custom Errors
-    - [ ] Error Wrapping (`%w`)
-    - [ ] `errors.Is` / `errors.As`
-    - [ ] Sentinel Errors
-  - **Concurrency (The Go Way)**
-    - [ ] Goroutines
-    - [ ] Channels
-    - [ ] Channel Buffering
-    - [ ] Channel Directions
-    - [ ] Channel Synchronization
-    - [ ] Closing/Range over Channels
-    - [ ] Select
-    - [ ] Non-Blocking Channel Operations
-    - [ ] Timeouts
-    - [ ] Timers
-    - [ ] Tickers
-    - [ ] WaitGroups
-    - [ ] Mutexes
-    - [ ] Atomic Counters
-    - [ ] Stateful Goroutines
-    - [ ] Worker Pools
-    - [ ] Rate Limiting
-  - **Data Handling & I/O**
-    - [ ] JSON
-    - [ ] XML
-    - [ ] String Functions & Formatting
-    - [ ] Text Templates
-    - [ ] Regular Expressions
-    - [ ] Sorting (& Sorting by Functions)
-    - [ ] Time/Epoch
-    - [ ] Time Formatting/Parsing
-    - [ ] Number Parsing
-    - [ ] URL Parsing
-    - [ ] SHA256 Hashes
-    - [ ] Base64 Encoding
-  - **File & OS Operations**
-    - [ ] Reading/Writing Files
-    - [ ] File Paths
-    - [ ] Directories
-    - [ ] Temporary Files
-    - [ ] Embed Directive
-    - [ ] Environment Variables
-    - [ ] Command-Line Arguments/Flags/Subcommands
-    - [ ] Signals
-    - [ ] Exit
-    - [ ] Spawning/Exec'ing Processes
-  - **Systems & Networking**
-    - [ ] HTTP Client
-    - [ ] HTTP Server
-    - [ ] TCP Server
-    - [ ] Context
-  - **Testing & Tooling**
-    - [ ] Testing
-    - [ ] Benchmarking
-    - [ ] Logging (`log/slog`)
-    - [ ] `gofmt`
-    - [ ] `go vet`
-    - [ ] `golangci-lint`
-    - [ ] `pprof` Profiling
+
+- [ ] **Error Handling**
+  - [x] Errors
+  - [x] Custom Errors
+  - [x] Error Wrapping (`%w`)
+  - [x] `errors.Is` / `errors.As`
+  - [x] Sentinel Errors
 
 - [ ] **Go Modules & Project Hygiene**
-  - [ ] `go.mod` / `go.sum` Management
-  - [ ] Semantic Versioning
-  - [ ] Go Workspaces (`go.work`)
+  - [x] `go.mod` / `go.sum` Management
+  - [x] Semantic Versioning
+  - [x] Go Workspaces (`go.work`)
+
+- [ ] **Standard Library Essentials**
+  - [ ] JSON
+  - [ ] String Functions & Formatting
+  - [ ] Sorting (& Sorting by Functions)
+  - [ ] Time/Epoch
+  - [ ] Time Formatting/Parsing
+  - [ ] Number Parsing
+  - [ ] URL Parsing
+  - [ ] Environment Variables
+  - [ ] Reading/Writing Files
+  - [ ] File Paths
+  - [ ] Directories
+
+- [ ] **Concurrency Fundamentals**
+  - [ ] Goroutines
+  - [ ] Channels
+  - [ ] Channel Buffering
+  - [ ] Channel Directions
+  - [ ] Channel Synchronization
+  - [ ] Closing/Range over Channels
+  - [ ] Select
+  - [ ] Non-Blocking Channel Operations
+  - [ ] Timeouts
+  - [ ] WaitGroups
+  - [ ] Mutexes
+
+- [ ] **HTTP & Networking with Go**
+  - [ ] HTTP Client
+  - [ ] HTTP Server
+  - [ ] Context
 
 - [ ] **RESTful API with Go & Gin**
   - [ ] Gin Framework Setup
@@ -127,21 +105,59 @@ Welcome to my **Go (Golang)** learning repository! This project serves as a dedi
   - [ ] Environment Variables
   - [ ] Automated Testing with Postman
 
+- [ ] **SQL Databases in Go**
+  - [ ] `database/sql` Fundamentals
+  - [ ] `sqlc` or GORM
+  - [ ] Migrations (`golang-migrate`)
+
 - [ ] **MongoDB Fundamentals & Driver Tutorial**
   - [ ] MongoDB Setup
   - [ ] Connecting Go to MongoDB
   - [ ] Basic CRUD Queries
   - [ ] Document Modeling
 
-- [ ] **SQL Databases in Go**
-  - [ ] `database/sql` Fundamentals
-  - [ ] `sqlc` or GORM
-  - [ ] Migrations (`golang-migrate`)
-
 - [ ] **Authentication & Authorization in Go**
   - [ ] JWT (JSON Web Tokens)
   - [ ] Password Hashing (bcrypt)
   - [ ] Middleware for Auth
+
+- [ ] **Testing & Quality Assurance**
+  - [ ] Testing
+  - [ ] Unit Testing
+  - [ ] Testify Assertions
+  - [ ] Mocking with Mockery
+  - [ ] Testing REST API Endpoints
+
+- [ ] **Advanced Concurrency Patterns**
+  - [ ] Timers
+  - [ ] Tickers
+  - [ ] Atomic Counters
+  - [ ] Stateful Goroutines
+  - [ ] Worker Pools
+  - [ ] Rate Limiting
+
+- [ ] **File & OS Operations**
+  - [ ] Temporary Files
+  - [ ] Embed Directive
+  - [ ] Command-Line Arguments/Flags/Subcommands
+  - [ ] Signals
+  - [ ] Exit
+  - [ ] Spawning/Exec'ing Processes
+
+- [ ] **Additional Data Processing**
+  - [ ] XML
+  - [ ] Text Templates
+  - [ ] Regular Expressions
+  - [ ] SHA256 Hashes
+  - [ ] Base64 Encoding
+
+- [ ] **Testing & Performance Tooling**
+  - [ ] Benchmarking
+  - [ ] Logging (`log/slog`)
+  - [ ] `gofmt`
+  - [ ] `go vet`
+  - [ ] `golangci-lint`
+  - [ ] `pprof` Profiling
 
 - [ ] **Clean Architecture Principles (Uncle Bob)**
   - [ ] Entities, Use Cases, Adapters
@@ -151,12 +167,6 @@ Welcome to my **Go (Golang)** learning repository! This project serves as a dedi
 - [ ] **Implementing Clean Architecture in Go**
   - [ ] Refactoring to Clean Architecture
   - [ ] Separating Concerns
-
-- [ ] **Testing & Quality Assurance (Testify & Mockery)**
-  - [ ] Unit Testing
-  - [ ] Testify Assertions
-  - [ ] Mocking with Mockery
-  - [ ] Testing REST API Endpoints
 
 - [ ] **Observability & Deployment**
   - [ ] Health Checks

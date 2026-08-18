@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func mainB() {
 	fmt.Println("Advanced Control Flow...")
 
 	// === Closures with Structs ===
