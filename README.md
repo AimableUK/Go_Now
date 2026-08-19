@@ -29,7 +29,7 @@ Welcome to my **Go (Golang)** learning repository! This project serves as a dedi
 ### Phase 02 - Mastering Go
 
 - [ ] **Go Core & Language Features**
-  - **[Data & Memory](./Learn/Go_By_Example/Data_and_Memory.go)** **[Exercises I did](./Exercises/Go_By_Example/Data_Memory_Exercises.md)**
+  - **[Data & Memory](./Learn/Go_By_Example/Data_and_Memory.go)** **- [Exercises I did](./Exercises/Go_By_Example/Data_Memory_Exercises.md)**
     - [x] Pointers
     - [x] Struct Embedding
     - [x] Enums
@@ -45,7 +45,7 @@ Welcome to my **Go (Golang)** learning repository! This project serves as a dedi
     - [x] Defer/Panic/Recover
     - [x] Range over Iterators
 
-- [ ] **Error Handling**
+- [ ] **[Error Handling](./Learn/Go_By_Example/Error_Handling.go)**
   - [x] Errors
   - [x] Custom Errors
   - [x] Error Wrapping (`%w`)
@@ -57,31 +57,31 @@ Welcome to my **Go (Golang)** learning repository! This project serves as a dedi
   - [x] Semantic Versioning
   - [x] Go Workspaces (`go.work`)
 
-- [ ] **Standard Library Essentials**
-  - [ ] JSON
-  - [ ] String Functions & Formatting
-  - [ ] Sorting (& Sorting by Functions)
-  - [ ] Time/Epoch
-  - [ ] Time Formatting/Parsing
-  - [ ] Number Parsing
-  - [ ] URL Parsing
-  - [ ] Environment Variables
-  - [ ] Reading/Writing Files
-  - [ ] File Paths
-  - [ ] Directories
+- [ ] **[Standard Library Essentials](./Learn/Go_By_Example/Standard_Library_Essentials.go)**
+  - [x] JSON
+  - [x] String Functions & Formatting
+  - [x] Sorting (& Sorting by Functions)
+  - [x] Time/Epoch
+  - [x] Time Formatting/Parsing
+  - [x] Number Parsing
+  - [x] URL Parsing
+  - [x] Environment Variables
+  - [x] Reading/Writing Files
+  - [x] File Paths
+  - [x] Directories
 
-- [ ] **Concurrency Fundamentals**
-  - [ ] Goroutines
-  - [ ] Channels
-  - [ ] Channel Buffering
-  - [ ] Channel Directions
-  - [ ] Channel Synchronization
-  - [ ] Closing/Range over Channels
-  - [ ] Select
-  - [ ] Non-Blocking Channel Operations
-  - [ ] Timeouts
-  - [ ] WaitGroups
-  - [ ] Mutexes
+- [ ] **[Concurrency Fundamentals](./Learn/Go_By_Example/Concurrency_Fundamentals.go)**
+  - [x] Goroutines
+  - [x] Channels
+  - [x] Channel Buffering
+  - [x] Channel Directions
+  - [x] Channel Synchronization
+  - [x] Closing/Range over Channels
+  - [x] Select
+  - [x] Non-Blocking Channel Operations
+  - [x] Timeouts
+  - [x] WaitGroups
+  - [x] Mutexes
 
 - [ ] **HTTP & Networking with Go**
   - [ ] HTTP Client

@@ -12,7 +12,7 @@ import (
 	"time"
 )
 
-func main() {
+func mainE() {
 	type TheUser struct {
 		Name string `json:"name"`
 		Age  int    `json:"age"` // this  `json:"age"` is to help show the age as the key. It can be called whatever, or hidden using "-" symbol
