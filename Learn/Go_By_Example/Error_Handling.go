@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func mainD() {
 	errr := findUser(-1)
 
 	if errr != nil {
