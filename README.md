@@ -83,10 +83,10 @@ Welcome to my **Go (Golang)** learning repository! This project serves as a dedi
   - [x] WaitGroups
   - [x] Mutexes
 
-- [ ] **HTTP & Networking with Go**
-  - [ ] HTTP Client
-  - [ ] HTTP Server
-  - [ ] Context
+- [ ] **[HTTP & Networking with Go](./Learn/Go_By_Example/HTTP_Networking.go)**
+  - [x] HTTP Client
+  - [x] HTTP Server
+  - [x] Context
 
 - [ ] **RESTful API with Go & Gin**
   - [ ] Gin Framework Setup

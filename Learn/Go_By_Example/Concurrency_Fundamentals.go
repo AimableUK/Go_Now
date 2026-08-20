@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-func main() {
+func mainF() {
 	go sayHello()
 
 	time.Sleep(time.Second)
