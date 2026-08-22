@@ -15,7 +15,7 @@ type TheUser struct {
 	Email string `json:"email"`
 }
 
-func main() {
+func mainG() {
 
 	// === Go -> API
 
@@ -161,7 +161,7 @@ func userHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(user)
 
-	ctx := r.Context()
+	// ctx := r.Context()
 	// db.QueryContext(ctx, query)
 }
 

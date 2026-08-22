@@ -1,14 +1,6 @@
 package main
 
-import (
-	"bufio"
-	"fmt"
-	"os"
-	"strconv"
-	"strings"
-)
-
-func mainA() {
+func mainH() {
 
 	// ============== Example 1: ================
 	// welcome := "Welcome to Our Pizza App"
@@ -71,5 +63,5 @@ func mainA() {
 	// 		}
 	// 	}
 	// }
-	
+
 }
